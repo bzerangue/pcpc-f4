@@ -1,0 +1,3 @@
+[submodule "workspace/js/mediaelement"]
+	path = workspace/js/mediaelement
+	url = https://github.com/johndyer/mediaelement.git
