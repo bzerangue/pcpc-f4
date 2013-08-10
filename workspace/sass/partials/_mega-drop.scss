@@ -1,0 +1,61 @@
+/* 
+:: Foundation Mega Drop
+:: Ministry Index
+*/
+
+
+// Foundation Mega Drop
+.light{font-weight:200 !important}.extra-bold{font-weight:800 !important}.regular{font-weight:normal !important}@font-face{font-family:'Proxima Nova';src:url(http://www.zurb.com/assets/ProximaNova-Reg-webfont.eot);src:url(http://www.zurb.com/assets/ProximaNova-Reg-webfont.eot?iefix) format("eot"),url(http://www.zurb.com/assets/ProximaNova-Reg-webfont.woff) format("woff"),url(http://www.zurb.com/assets/ProximaNova-Reg-webfont.ttf) format("truetype"),url(http://www.zurb.com/assets/ProximaNova-Reg-webfont.svg#webfontZam02nTh) format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Proxima Nova';src:url(http://www.zurb.com/assets/ProximaNova-Light-webfont.eot);src:url(http://www.zurb.com/assets/ProximaNova-Light-webfont.eot?iefix) format("eot"),url(http://www.zurb.com/assets/ProximaNova-Light-webfont.woff) format("woff"),url(http://www.zurb.com/assets/ProximaNova-Light-webfont.ttf) format("truetype"),url(http://www.zurb.com/assets/ProximaNova-Light-webfont.svg#webfontBtAcCspH) format("svg");font-weight:200;font-style:normal}@font-face{font-family:'Proxima Nova';src:url(http://www.zurb.com/assets/ProximaNova-Bold-webfont.eot);src:url(http://www.zurb.com/assets/ProximaNova-Bold-webfont.eot?iefix) format("eot"),url(http://www.zurb.com/assets/ProximaNova-Bold-webfont.woff) format("woff"),url(http://www.zurb.com/assets/ProximaNova-Bold-webfont.ttf) format("truetype"),url(http://www.zurb.com/assets/ProximaNova-Bold-webfont.svg#webfontZ6etP9ZY) format("svg");font-weight:bold;font-style:normal}@font-face{font-family:'Proxima Nova';src:url(http://www.zurb.com/assets/ProximaNova-Xbold-webfont.eot);src:url(http://www.zurb.com/assets/ProximaNova-Xbold-webfont.eot?iefix) format("eot"),url(http://www.zurb.com/assets/ProximaNova-Xbold-webfont.woff) format("woff"),url(http://www.zurb.com/assets/ProximaNova-Xbold-webfont.ttf) format("truetype"),url(http://www.zurb.com/assets/ProximaNova-Xbold-webfont.svg#webfont2rpW2ohz) format("svg");font-weight:900;font-style:normal}@font-face{font-family:'ProximaNovaCondensedBold';src:url(http://www.zurb.com/assets/proximanovacond-bold-webfont.eot);src:url(http://www.zurb.com/assets/proximanovacond-bold-webfont.eot?#iefix) format("embedded-opentype"),url(http://www.zurb.com/assets/proximanovacond-bold-webfont.woff) format("woff"),url(http://www.zurb.com/assets/proximanovacond-bold-webfont.ttf) format("truetype"),url(http://www.zurb.com/assets/proximanovacond-bold-webfont.svg#ProximaNovaCondensedBold) format("svg");font-weight:normal;font-style:normal}.row.top{border-bottom:#777 1px solid;padding-bottom:10px;margin-bottom:30px !important}.row.top h4{color:#999;font-family:ProximaNovaCondensedBold;font-weight:100}.row.top a h4:hover img{opacity:0.5}.row.top h4 img{margin-left:-8px;position:relative;top:1px}.row .right.links{margin-top:6px}.row .right.links a{color:#fff;font-weight:bold !important;margin:0px 8px}.row .right.links a:hover{color:#999}#megaDrop p{line-height:1.55}#megaDrop h4 small{text-transform:uppercase}#megaDrop h4>small{border-top:none;margin-bottom:5px}#megaDrop h6{color:#999;font-weight:bold;font-size:14px;font-size:1.4rem;margin-bottom:14px}#megaDrop h3{color:#fff}#megaDrop hr{border-style:dotted;border-color:#555}#megaDrop a.button{color:#fff}#megaDrop a.button.gray{background:#888}#megaDrop a.button.gray:hover{background:#555}#megaDrop a.button.yellow{background:#E5A309}#megaDrop a.button.yellow:hover{background:#b78102}.zurb-properties{position:absolute;z-index:1000;width:650px;background:#FFF;background:rgba(255,255,255,0.95);top:48px;left:-20px;display:none}.main-half{width:60%;float:left;border-right:1px dotted #CCC}.main-half ul li{background:url(http://www.zurb.com/assets/icons/zurb-properties.jpg) no-repeat 15px 15px}.main-half ul li a{display:block;padding:12px 15px 10px 64px;border-bottom:1px dotted #CCC}.main-half ul li:hover{cursor:pointer;background:url(http://www.zurb.com/assets/icons/zurb-properties.jpg) no-repeat 15px 15px #ccc}.main-half ul li a.current{border-left:3px solid #b8d30b}.main-half ul li:last-child a{border-bottom:none}.main-half ul li a p{margin-bottom:0;color:#333}.main-half ul{margin-bottom:0}.featured-half{width:39%;float:left}.featured-half a{margin-bottom:0}.featured-padding{padding:15px 15px 0 15px}.has-dropdown .current{color:#FFF;text-shadow:0 -1px 1px rgba(0,0,0,0.5)}.has-dropdown .current.admin-services{background:#B8D30B}.has-dropdown .current.admin-products{background:#707070}.has-dropdown .current.admin-talent{background:#2caebe}.has-dropdown .current.admin-events{background:#b1005d}.has-dropdown .current.admin-publishing{background:#f59f1a}li.has-drop-down a{color:#FFF !important}.center-content{text-align:center;border-bottom:1px solid #555;padding-bottom:2px;margin-bottom:15px}.center-content p{font-size:14px}.center-content p a{color:#FFF !important}.center-content:hover{cursor:pointer}.center-content:hover p a{color:#AAA}#megaDrop h4 small{border-top:none;padding-top:0;margin-bottom:5px}#megaDrop .property p,#megaDrop .property .zurb-soapbox a,#megaDrop .property .zurb-events a,#megaDrop .property .zurb-expo a,#megaDrop .property .zurb-jobs a{color:#CCC}#megaDrop .property .zurb-soapbox a strong,#megaDrop .property .zurb-events a strong,#megaDrop .property .zurb-expo a strong,#megaDrop .property .zurb-jobs a{color:#FFF}.zurb-soapbox a:hover,.zurb-events a:hover,.zurb-expo a:hover,.zurb-jobs a:hover{color:#AAA !important}#megaDrop .property a{display:block}#megaDrop .property a p{color:#FFF !important;display:block}#megaDrop .property a h4{font-family:ProximaNovaCondensedBold;font-size:18px;font-weight:100;text-transform:uppercase;color:#ffffff}#megaDrop .property a h4 span.apps{text-transform:none;color:#fff}#megaDrop .property span{clear:both;color:#137795;white-space:no-wrap;font-weight:bold}#megaDrop .property a:hover p,#megaDrop .property a:hover h4,#megaDrop .property a:hover h4 span.apps{color:#ddd}#megaDrop .property a:hover span{color:#006582}#megaDrop .property p a:hover{color:#AAA}ul.zurb-apps li{margin-bottom:5px}ul.zurb-apps li a{color:#FFF;padding-left:24px}ul.zurb-apps li a:hover{color:#AAA}ul.zurb-apps li.verify{background:url(http://www.zurb.com/assets/mega-drop-down/verify.png) no-repeat center left}ul.zurb-apps li.notable{background:url(http://www.zurb.com/assets/mega-drop-down/notable.png) no-repeat center left}ul.zurb-apps li.enroll{background:url(http://www.zurb.com/assets/mega-drop-down/enroll.png) no-repeat center left}ul.zurb-apps li.influence{background:url(http://www.zurb.com/assets/mega-drop-down/influence.png) no-repeat center left}ul.zurb-apps li.solidify{background:url(http://www.zurb.com/assets/mega-drop-down/solidify.png) no-repeat center left}.drop-down-foundation{text-align:center;border-top:1px solid #555;margin-top:2px;padding-top:15px}.drop-down-foundation p{margin-bottom:0}.drop-down-foundation span{font-family:"ProximaNovaCondensedBold", "Proxima Nova", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;text-transform:uppercase}.drop-down-foundation p a{color:#FFF !important}.drop-down-foundation p a span{color:#00A5FF}.drop-down-foundation p a:hover{color:#AAA}
+// 
+#megaDrop{
+	display:none;overflow:hidden;position:relative;width:100%;z-index:1;padding-top:35px;padding-bottom:40px;color:#fff;margin-top:-1px !important;padding-left:15px;padding-right:15px;
+	@include box-shadow(inset 0 0px 6px rgba(0, 0, 0, .7));
+	background:darken($main-color, 20%);
+}
+
+
+
+// Ministry Index
+.ministryIndex {
+
+	header {
+		border-bottom: 1px solid white;
+
+		h2 {
+			font-size: ms(2);
+			color:white;
+		}
+
+	}
+
+	#ministryIndexWrap {
+		@include innerRow();
+		margin-top: 12px;
+
+		.ministryIndexColumn {
+			@include column(3);
+
+			// List
+			> li {
+				list-style: none;
+
+				a {
+					font-size: 13px;
+					color: $white;
+
+					&:hover {
+						color:lighten($dark-color, 52%);
+					}
+				}
+			}
+			li.name {
+				font-size: 13px;
+				color: lighten($main-color, 48%);
+				text-transform: uppercase;
+				margin-bottom: 4px;
+				font-weight: 600
+			}
+		}
+	}
+}
+

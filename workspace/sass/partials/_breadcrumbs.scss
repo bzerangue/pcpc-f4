@@ -1,0 +1,24 @@
+/* Navigation: Breadcrumbs */
+
+ul.breadcrumbs {
+	background: none;
+	border: 0;
+
+	li {
+		padding: 0 12px 0 15px;
+
+		span {
+			text-transform: capitalize;
+			color: lighten($text-color, 48%);
+			font-size: ms(0);
+
+			&.current {
+				font-weight: 600;
+				color: lighten($text-color, 5%);
+			}
+		}
+
+	}
+
+	
+}

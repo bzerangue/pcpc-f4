@@ -1,0 +1,92 @@
+/* 
+:: Shared 
+*/
+
+// Body, typography, selection, general foundation components overrides, shared media queries
+
+
+body {
+	background: $white url('../images/site/bg.png')repeat;
+	color:$text-color;
+}
+
+.inner {@include outerRow();}
+
+
+::selection {
+	background: lighten($main-color, 48%); /* Safari */
+	// #84ADC4
+	color:white;
+	}
+::-moz-selection {
+	background: lighten($main-color, 48%); /* Firefox */
+}
+
+
+a {
+	color: $main-color;
+	-webkit-transition: color 0.15s ease-in-out;
+	-moz-transition: color 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out;
+
+	&:hover {
+		color: darken($main-color, 12%);
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	color: $header-color;
+}
+
+.more-info, a.more-info {
+	@extend %button;
+}
+
+h2 {
+	font-size: ms(6);
+}
+
+p.lead {
+	color: lighten($main-color, 4%);
+	font-size: ms(3);
+}
+
+p {
+	font-family: $serif;
+	font-size: ms(1);
+}
+
+// Thumbnail Lists
+.th img {
+	@include border-radius(0 0);
+}
+
+
+
+
+
+
+
+/* 
+:: Shared Media Queries
+*/
+
+// Page/Component Specific Queries are located in their respective partials
+
+// Below 940 //
+@media only screen and (max-width: 940px) { 
+  
+	// Typography ---
+	h2 {
+		font-size: ms(4);
+	}
+
+	p.lead {
+		font-size: ms(2);
+	}
+
+	p {
+		font-size: ms(1);
+	}
+
+}

@@ -1,0 +1,25 @@
+/* Audio Player Skin - PCPC Skin --- */ 
+.mejs-container {
+	background:none;
+	height: 27px !important; 
+
+	.mejs-controls {
+
+		background: $main-color; 
+		// border: 1px solid #2a2a2a;
+		@include border-radius(3px 3px);
+		padding: 0 8px;
+		height: 27px;
+
+		.mejs-play button {
+			background-position: 2px -1px;
+			
+		}
+		
+		div {
+			margin-top: -2px;
+		}
+	
+	}
+
+}

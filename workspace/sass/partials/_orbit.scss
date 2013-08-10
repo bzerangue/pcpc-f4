@@ -1,0 +1,232 @@
+/* 
+: Orbits 
+*/
+
+
+
+// General Settings 
+div.orbit, div.orbit-wrapper{
+	margin-bottom: 0;
+}
+
+div.orbit-wrapper div.timer {
+	display:none;
+}
+
+
+
+// Welcome Orbit
+#welcomeOrbit {
+	max-height: 320px;
+}
+
+.welcome {
+	.orbit-wrapper {
+		border-bottom: 1px solid lighten($dark-color, 52%);
+		
+		.orbit-slide {
+			padding:0;
+
+			.orbit-slide-image {
+				max-width: 1440px;
+				margin: 0 auto;
+			}
+
+			.orbit-slide-text {
+				@include column(10, center);
+
+				span.meta {
+					display: block;
+					font-size: 12px;
+					color: #999;
+					margin: 2px auto;
+				}
+
+				span.tag {
+					display: block;
+					font-style: italic;
+					font-family: $serif;
+					margin-bottom: 6px;
+				}
+			}
+
+			.orbit-slide-column {
+				@include column(6);
+
+				img {
+					margin-top: 10px;
+				}
+			}
+			.orbit-slide-column.small {
+				@include column(4);
+				width: 32%
+			}
+
+			.orbit-slide-column.big {
+				@include column(8);
+			}
+		}
+
+		.slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }
+  		&:hover .slider-nav span { @include opacity(1); }
+
+		div.slider-nav {
+
+			span {top: 0;margin-top:0;}
+
+			span.left, span.right {
+				width:180px;
+				height:100%;
+			}
+			span.left {
+				background: url("../images/site/orbitArrowL@2x.png") no-repeat;
+			}
+
+			span.right {
+				background:url('../images/site/orbitArrowR@2x.png') no-repeat;
+			}
+
+		}
+	}
+}
+
+
+
+
+// Featured Orbit
+.feature {
+	.orbit-wrapper {
+		.orbit-slide {padding:0 20px;}
+
+		div.slider-nav {
+
+			span {top: 30%;}
+
+			span.left, span.right {
+				background:$sprite; 
+			}
+
+			span.left {
+				background-position: -272px -165px;
+			
+				&:hover {
+					background-position: -272px -116px;
+				}
+			}
+
+			span.right {
+				background-position: -272px -44px;
+				
+				&:hover {
+					background-position: -272px 5px;
+				}
+			}
+
+		}
+	}
+}
+
+
+// MQ Below 940 
+@media only screen and (max-width: 940px) {
+	// Welcome Orbit ---
+	.welcome .orbit-wrapper {
+		
+		div.slider-nav {
+
+			span.left {
+				background-position:0 -60px;
+
+			}
+			span.right {
+				background-position:0 -60px;
+			}
+		}
+	}
+}
+
+
+// MQ Below 767px
+@media only screen and (max-width: 767px) {
+	
+	
+	// General
+	div.orbit-wrapper div.slider-nav.hide-for-small {
+		display: inherit !important; 
+	}
+
+
+	// Welcome Orbit ---
+	.welcome .orbit-wrapper {
+		
+		div.slider-nav {
+
+			span.left {
+				background-position:-20px -120px;
+			}
+			span.right {
+				background-position:-0px -120px;
+			}
+		}
+
+		.orbit-slide-text {
+			p, img {display:none;}
+			h4 {font-size: 14px;}
+
+			span.tag {float:left;}
+			.button {float:right;}
+
+		}
+	}
+
+	// Feature Orbit
+	.feature .orbit-wrapper #featuredOrbit {
+		padding-bottom: 60px;
+
+		div.slider-nav {
+			span.left, span.right {
+				margin: 0 15px;
+			}
+		}
+		
+		ul.orbitList li {
+			margin-bottom: 150px;
+		}
+
+		img {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		p {display:none;}
+
+		h4 {
+			font-size: 18px;
+			text-align: center;
+		}
+
+		margin-right: 15px;
+	}
+
+}
+
+
+// MQ: Below 420 
+@media only screen and (max-width: 420px) {
+	// Welcome Orbit ---
+	.welcome .orbit-wrapper {
+		
+		div.slider-nav {
+
+			span.left {
+				background-position:-20px -120px;
+				width: 40px;
+			}
+			span.right {
+				background-position: -130px -120px;
+				width: 40px;
+			}
+		}
+
+	}
+}

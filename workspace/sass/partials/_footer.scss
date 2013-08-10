@@ -1,0 +1,102 @@
+/* Footer */
+
+footer#footer {
+	background:$secondary-color;
+	// v : For stickyfooter : v //
+	width: 100%;
+	z-index:100;
+	position:relative;
+    overflow: hidden;
+    padding-top:12px;
+    border-top: 1px solid darken($secondary-color, 20%);
+
+
+	.footerColumn {
+		@include column(3);
+
+		.name {
+			font-size: ms(1);
+			font-weight: bold;
+    		color:darken($secondary-color, 48%);
+    		margin: 4px auto;
+		}
+
+		a {
+			color:white;
+
+			&:hover {color:darken($secondary-color, 25%);}
+		}
+
+		li {list-style:none;}
+	}
+
+	#footer-search {
+		display: none;
+	}
+}
+
+// MQ - Below 940
+@media only screen and (max-width: 768px) {
+	#footer-search {
+		display: block !important;
+		margin-top: 32px;
+		border-top: 1px solid darken($secondary-color, 25%);
+		padding-top: 16px;
+		margin-left: -15px;
+		margin-right: -15px;
+		background: $dark-color;
+		padding-bottom: 26px;
+		margin-bottom: -18px;
+		position: relative;
+		
+		.search-inner {
+			padding: 0 15px;
+		}
+
+		&.search {
+			&:before {
+				left: 16px;
+				top: 20px;
+				z-index: 10;
+			}
+		}
+
+		input[type="text"] {
+			width: 86%;
+			display: inline-block;
+			float: left;
+			margin-right: 8px;
+		}
+
+		input.button {
+			background: $secondary-color;
+			width: auto;
+			display: inline-block;
+			padding: 8px 10px;
+			h
+
+			&:hover {
+				background: darken($secondary-color, 25%);;
+			}
+		}
+	}
+}
+
+// MQ - Below 480
+@media only screen and (max-width: 480px) {
+	#footer-search {
+		&.search:before {
+			background: none;
+		}
+
+		input[type="text"] {
+			width: 80%
+		}
+
+		input.button {
+			height: 32px;
+		}
+
+	}
+	
+}	

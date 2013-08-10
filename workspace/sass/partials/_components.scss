@@ -1,0 +1,368 @@
+
+
+
+/* Component: Article Wrap */
+.main-section {
+
+	.breadcrumbs {
+		@extend .hide-for-small;
+	}
+
+	#aside-panel {
+		@include column(4);
+		margin-bottom: 32px;
+	}
+
+	article {
+		@include column(8);
+		margin-bottom: 48px;
+	}
+
+	border-left: 1px solid lighten($text-color, 52%);
+}
+
+
+
+/* Component: Video Article */
+.video-article {}
+
+
+
+/* Component: Video */
+
+.video {
+	@extend .flex-video, .vimeo;
+	padding-bottom:60.5%;
+}
+
+
+
+
+/* Component: Audio Article */
+.audio-article {
+
+	dl.tags {
+		dt {font-weight:bold}
+		dt, dd {display:inline;}
+	}
+
+	.meta {
+		@include innerRow();
+		@extend .no-bullet;
+		@extend .inline-list;
+		padding-bottom: 4px;
+		margin: 0 0 17px !important;
+		
+		
+		> li > * {
+			display: inline !important;
+		}
+		
+		> li {
+			margin: 0 6px !important;
+		}
+		
+		li:after {
+			content: '|';
+			padding:0 0 0 8px;
+		}
+
+		li:last-child:after {
+			content: '';
+		}
+		border-bottom: 1px solid lighten($dark-color, 52%);
+	}
+
+	.mediaOptions {
+		@include innerRow();
+		margin: 0;
+		padding: 0;
+		
+		> a, .audioWrap {
+			float: left;
+			margin: 0 3px 6px;
+		}
+
+		.audioWrap {
+			clear: both;
+		}
+	}
+
+
+}
+
+
+
+/* Component: Orbit List (designed for use with .featuredOrbit)*/
+ul.orbitList {
+	@include column(12, center);
+	@extend .no-bullet;
+
+	li {
+		float:left;
+		@include column(4);
+	}
+}
+
+
+
+
+/* Component: Large Menu */
+.largeMenu {
+	@include column(12);
+	.menuRow {
+		@include innerRow();
+	}
+
+	ul.menuList.text {
+		// @include columns(3);
+		@include clearfix();
+		clear:both;
+
+		li {
+			// display: inline-block;
+			list-style: none;
+			margin-bottom: 14px;
+
+			a {
+				font-family: $sans;
+				font-weight: 600;
+			}
+		}
+	}
+
+	ul.menuList.images {
+		@extend .no-bullet;
+		
+		li {
+			float: left;
+			@include column(3);
+		}
+	}
+}
+// MQ - Below 940
+@media only screen and (max-width: 940px) { 
+	.largeMenu ul.menuList.text {
+		@include columns(auto);
+	}
+}
+
+
+
+/* Component: Panel */
+.panelWrap {
+	
+	.panel {
+	background: white;
+    border-top: 1px solid #F5F3ED;
+    border-right: 1px solid #E4E1DC;
+    border-bottom: 1px solid #C8C6C1;
+    border-left: 1px solid #EEECE7;
+    @include box-shadow(0px 0px 6px rgba(50, 50, 50, 0.15));
+	padding:18px 12px 0;
+	margin: 0;
+	position: relative;
+
+		&:after {
+          content:'';
+          background:url(../images/site/crossHatch.png) 20px -1px repeat-x;
+          width:100%;
+          height:12px;
+		  margin-left: -12px;
+		  position: absolute;
+		  bottom: 0;
+          border-top:1px solid #e8e8e8;
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+	    
+
+		.title {
+			border-bottom:1px solid lighten($dark-color, 52%);
+			display: inline-table;
+			width: 100%;
+
+			h4 {
+				line-height:1.25em;
+				font-weight:bold;
+				font-family:$sans;
+				font-size: ms(1);
+				display: inline-block;
+				margin:0 12px 6px 0;
+				text-transform: uppercase;
+			}
+			.more {
+				font-style: italic;
+				float: right;
+				line-height: 1.2em;
+				display: inline-block;
+				@extend %arrow-rightwards;
+				@extend %bump-right;
+			}
+		}
+
+		.body {
+			clear:both;
+			padding:10px 0;
+
+			time {
+				font-family: $serif;
+				color: lighten($dark-color, 48%);
+			}
+
+			h3 {
+				line-height:1.25em;
+				font-weight:bold;
+				font-family:$sans;
+				font-size: ms(1);
+				font-size: 19px;
+				text-transform: uppercase;
+				margin: 10px 0;
+			}
+			.tag {
+				display: block;
+				font-style: italic;
+				font-family: $serif;
+			}
+		}
+		
+		.mediaOptions {
+			padding: 0;
+		}
+	}
+}
+
+
+
+/* Component: Filter Tags Navigation */
+dl.filter-tags {
+	@extend .sub-nav;
+	margin: 12px 0;
+
+	dd a {
+		@include border-radius(4px 4px );
+	}
+
+	dd.active a {
+		background: $main-color;
+	}
+}
+
+
+
+/* Component: Slats */
+.slatsWrap header {
+	border-bottom: 1px solid lighten($dark-color, 52%);
+	h2 {
+		line-height:1.25em;
+		font-weight:bold;
+		font-family:$sans;
+		font-size: ms(1);
+		display: inline-block;
+		margin-right: 12px;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
+
+	a {
+		font-style: italic;
+		@extend %arrow-rightwards;
+		@extend %bump-right;
+	}
+}
+ol.slats li {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid lighten($dark-color, 52%);
+	list-style:none;
+	}
+ol.slats li:last-child {
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+	}
+ol.slats li a h3 {
+	font-size: ms(1);
+	color: $main-color;
+	font-weight: bold;
+	line-height: 1.1;
+	margin-bottom:4px;
+
+	&:hover {
+		color: darken($main-color, 12%);
+	}
+}
+ol.slats li .tag {
+	font-weight: 600;
+	display: block;
+	margin-bottom:4px;
+	color: #222;
+}
+ol.slats li a img {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 4px;
+	border: 1px solid #eee;
+	}
+ol.slats li a:hover img {
+	background: #eee;
+	}
+ol.slats li a p {
+	margin: 0 0 0 70px;
+	font-size: ms(0);
+	line-height: 1.4;
+	color: #222;
+	}
+ol.slats li a p span.meta {
+	display: block;
+	font-size: 12px;
+	color: #999;
+	margin: 2px auto;
+	}
+ol.slats time {
+	color:$text-color;
+	font-size: 11px;
+	font-weight:600;
+}
+ol.slats time.timestamp {
+	float:left; 
+	margin-right: 12px;
+	height:50px;
+	width:50px;
+  font: bold 1.143em $sans;
+  line-height: 1.2em;
+  color:$text-color;
+  text-transform:uppercase;
+  text-align:center;
+  width:40px;
+  .month {
+    font-size:0.857em;
+    display:block;
+  }
+  .date {
+    font-size:1.714em;
+    display:block;
+  }
+}
+ol.slats .article .more-info {
+	margin:10px 0;
+} 
+ol.slats li.event .more-info {margin-top: -16px; float:right;}
+
+
+
+// MQ - Below 940 //
+@media only screen and (max-width: 940px) { 
+	
+	ol.slats { margin-left: 0; }
+
+	ol.slats li a img {
+		display: block;
+		float: none;
+		margin: 0 0 5px 0;
+	}		
+	ol.slats li a p {
+		margin: 0;
+	}
+
+}

@@ -1,0 +1,30 @@
+/* 
+:: Forms & Input 
+*/
+
+/* Input */
+// Search Box
+.search {
+	input[type="text"] {
+		@include border-radius(100px);
+		height:30px;
+		text-indent: 24px;
+	}
+	&:before {
+		line-height: 1em;
+		position: absolute;
+		top: 4px;
+		content: "";
+		background: $sprite;
+		background-position: -6px -258px;
+		height: 20px;
+		width: 40px;
+	}
+}
+
+// Input Active Color 
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+	  @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+	  outline:none;
+}
+

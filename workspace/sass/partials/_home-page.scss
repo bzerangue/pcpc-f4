@@ -1,0 +1,69 @@
+/* --- Home --- */
+
+
+/* Section: Welcome */
+.welcome {
+	header {
+		background: white;
+		border-bottom: 1px solid #E2E2E2;
+
+		h2 {
+			text-align: center;
+			padding: 14px 0 20px;
+			font-family: $serif;
+			font-style:italic;
+  			font-size: ms(4);
+			font-weight:500;
+			margin:0 auto;
+			color:lighten($dark-color, 52%); ;
+		}
+	}
+
+	// For #welcomeOrbit, refer to _orbit.scss
+}
+
+
+
+
+/* Section: News */
+.news {
+	margin: 32px auto;
+
+	.slatsWrap {
+		@include column(8);
+	}
+
+	.panelWrap {
+		@include column(4);
+	}
+}
+
+
+
+
+/* Section: Feature Orbit */
+.feature {
+	margin: 32px auto;
+
+	// For #featuredOrbit, refer to _orbit.scss
+	
+}
+
+
+
+
+
+// MQ Below 767px
+@media only screen and (max-width: 767px) {
+	// Welcome Header
+	.welcome header {
+		h2 {
+			font-size: 30px;
+		}
+	}	
+	// News --
+	.news .panelWrap {
+		margin-top: 32px;
+	}
+
+}

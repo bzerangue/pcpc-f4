@@ -1,0 +1,45 @@
+/*
+: LT IE 9
+*/
+
+.lt-ie9 {
+
+	#pageWrap {
+		min-width: 1140px;
+	}
+
+	#globalNav.top-bar {
+		background: #27678A;
+	}
+
+	#masthead {
+		nav#actionNav ul > li {
+			padding: 0 4px;
+
+			a.toggleMegaDrop span {
+				top:0;
+			}
+		}
+	}
+
+	.top-bar ul li a {
+		font-style:normal;
+	}
+
+	// Media Buttons 
+	a.mediaButton {
+		background: #d1d1d1 !important;
+		background-color: #d1d1d1 !important;
+		background-image:none;
+		color:white !important;
+	}
+
+	h1, h2, h3, h4, h5, p, a, li, span {
+		font-family: "Arial", "helvetica", sans-serif !important; 
+	}
+	.welcome header h2 {
+		font-family: "minion-pro", serif !important;
+	}
+}
+
+

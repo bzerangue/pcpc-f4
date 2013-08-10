@@ -1,0 +1,35 @@
+/* 
+:: Placeholders
+*/
+
+
+// List Blocks - good for Resources
+%list-block {
+	border-bottom: 1px solid #ddd;
+	ul {
+		margin-left:12px;
+	}
+}
+
+// Bump right - good for 'More' links
+%bump-right {
+	@include transition(all .05s ease-in);
+	position: relative;
+
+	&:hover {
+		left: 2px;
+	}
+}
+
+// Arrow Rightwards
+%arrow-rightwards {
+	&:after {content: ' →';}
+}
+
+// Main Gradient
+%main-smooth-gradient-bg {
+	background: darken($main-color, 16%); // Old browsers
+	@include filter-gradient(darken($main-color, 16%), darken($main-color, 8%), vertical); // IE6-9
+	@include background-image(linear-gradient(darken($main-color,16%), darken($main-color,8%)));	
+}
+
